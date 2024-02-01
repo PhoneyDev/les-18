@@ -1,0 +1,58 @@
+/* styles.css */
+body, h1, ul, li, p, footer {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header {
+    background-image: url('almere.jpg'); /* Vervang dit door een echte foto van Almere */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.links, .rechts {
+    padding: 10px;
+}
+
+.rechts {
+    background-color: #f0f0f0;
+}
+
+.attractie {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.attractie img {
+    margin-left: 20px;
+    max-width: 500px; 
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #0044cc;
+    color: white;
+}
+
+@media (min-width: 600px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .links {
+        flex: 2;
+    }
+
+    .rechts {
+        flex: 9;
+    }
+}
+
